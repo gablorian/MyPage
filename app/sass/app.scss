@@ -1,5 +1,58 @@
-body{
-    background: #000000;
+@import "header";
+
+$columns: 12;
+$columnWidth: 100% / $columns;
+@mixin clearfix(){
+    &:before, &:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
 }
-@import "homePage";
-@import "hexes";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    @include clearfix();
+    .row{
+        float:left;
+        width: 100%;
+        [class*="column-"]{
+            min-height: 1px;
+            float: left;
+        }
+        @for $i from 1 through $columns{
+            .column-#{$i}{
+                width: $columnWidth * $i;
+                padding: 0 5px;
+            }
+        }
+        @for $i from 1 through $columns{
+            @media (min-width: 768px){
+                .column-sm-#{$i}{
+                    width: $columnWidth * $i;
+                    padding: 0 5px;
+                }
+            }
+        }
+        @for $i from 1 through $columns{
+            @media (min-width: 1024px){
+                .column-md-#{$i}{
+                    width: $columnWidth * $i;
+                    padding: 0 5px;
+                }
+            }
+        }
+        @for $i from 1 through $columns{
+            @media (min-width: 1280px){
+                .column-lg-#{$i}{
+                    width: $columnWidth * $i;
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+}

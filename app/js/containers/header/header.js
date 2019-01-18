@@ -4,27 +4,17 @@ class Header extends React.Component{
     render(){
         return (
             <header className={"container"}>
+                <div className={"row header"}>
                 <div className={"column-2"}>
-                    <img/>
+                    <img className={"logo"}/>
                 </div>
-                <div>
+                <div className={"column-8"}>
                     <ul>
                         <li>Funkcje</li>
                         <li>Cennik</li>
                         <li>Pomoc</li>
-                        <li>Blog</li>
-                        <li>Forum</li>
                     </ul>
                 </div>
-                <div>
-                    <div className={"column-2"}>
-                        <img/>
-                        <p>Zaloguj się</p>
-                    </div>
-                    <div className={"column-2"}>
-                        <img/>
-                        <p>Załóż konto</p>
-                    </div>
                 </div>
             </header>
     )

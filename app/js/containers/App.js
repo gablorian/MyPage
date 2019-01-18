@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
+import Header from "./header/header";
 
 class App extends Component{
     render(){
         return (
             <body>
-                <ul id="grid" className="clear">
-                    <li>
-                        <div className="hexagon firstHex"></div>
-                    </li>
-                    <li>
-                        <div className="hexagon secondHex"></div>
-                    </li>
-                    <li>
-                        <div className="hexagon fourthHex"></div>
-                    </li>
-                </ul>
+                <Header/>
+                <section>
+
+                </section>
+                <footer>
+
+                </footer>
             </body>
         );
     }
