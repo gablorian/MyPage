@@ -3,21 +3,22 @@ import React from "react";
 class Header extends React.Component{
     render(){
         return (
-            <header className={"container"}>
-                <div className={"row header"}>
-                <div className={"column-2"}>
-                    <img className={"logo"}/>
+            <div className={"container"}>
+
+                    <div className={"column-12 center title"}>
+                        Welcome to my portfolio page. Please check out some of my projects.
+                    </div>
+
+                <div className={"row center"}>
+                    <div className={"column-3 firstBox"}>
+                    </div>
+                    <div className={"column-3 secondBox"}>
+                    </div>
+                    <div className={"column-3 thirdBox"}>
+                    </div>
                 </div>
-                <div className={"column-8"}>
-                    <ul>
-                        <li>Funkcje</li>
-                        <li>Cennik</li>
-                        <li>Pomoc</li>
-                    </ul>
-                </div>
-                </div>
-            </header>
-    )
+            </div>
+        )
     }
 }
 export default Header

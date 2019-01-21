@@ -6,12 +6,7 @@ class App extends Component{
         return (
             <body>
                 <Header/>
-                <section>
 
-                </section>
-                <footer>
-
-                </footer>
             </body>
         );
     }

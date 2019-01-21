@@ -1,5 +1,12 @@
 @import "header";
 
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'raleway', sans-serif;
+}
+
 $columns: 12;
 $columnWidth: 100% / $columns;
 @mixin clearfix(){
@@ -13,12 +20,13 @@ $columnWidth: 100% / $columns;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: #3dd3ff;
 }
 .container{
     width: 100%;
     @include clearfix();
     .row{
-        float:left;
+        float: left;
         width: 100%;
         [class*="column-"]{
             min-height: 1px;

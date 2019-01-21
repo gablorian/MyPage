@@ -1,0 +1,46 @@
+.center{
+  display: flex;
+  justify-content: space-evenly;
+  height: 75%;
+  align-items: center;
+}
+.title{
+  height: 25%;
+  font-size: 3em;
+  color: white;
+}
+.firstBox {
+  background-image: url("../images/league.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transform: scale(1);
+  transition-duration: 1200ms;
+  height: 80%;
+}
+.secondBox {
+  background-image: url("../images/workinprogress.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transform: scale(1);
+  transition-duration: 1200ms;
+  height: 80%;
+}
+.thirdBox {
+  background-image: url("../images/workinprogress.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transform: scale(1);
+  transition-duration: 1200ms;
+  height: 80%;
+}
+.firstBox:hover, .secondBox:hover, .thirdBox:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+
+  transition-duration: 2s;
+
+
+}
