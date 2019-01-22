@@ -3,7 +3,6 @@
 html, body {
     margin: 0;
     height: 100%;
-    overflow: hidden;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -39,7 +38,7 @@ $columnWidth: 100% / $columns;
             }
         }
         @for $i from 1 through $columns{
-            @media (min-width: 768px){
+            @media (max-width: 1023px){
                 .column-sm-#{$i}{
                     width: $columnWidth * $i;
                     padding: 0 5px;

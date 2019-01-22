@@ -5,16 +5,16 @@ class Header extends React.Component{
         return (
             <div className={"container"}>
 
-                    <div className={"column-12 center title"}>
-                        Welcome to my portfolio page. Please check out some of my projects.
+                    <div className={"row center title"}>
+                        <p>Welcome to my portfolio page. Please check out some of my projects.</p>
                     </div>
 
                 <div className={"row center"}>
-                    <div className={"column-3 firstBox"}>
+                    <div className={"column-sm-12 column-md-3 firstBox"}>
                     </div>
-                    <div className={"column-3 secondBox"}>
+                    <div className={"column-sm-12 column-md-3 secondBox"}>
                     </div>
-                    <div className={"column-3 thirdBox"}>
+                    <div className={"column-sm-12 column-md-3 thirdBox"}>
                     </div>
                 </div>
             </div>

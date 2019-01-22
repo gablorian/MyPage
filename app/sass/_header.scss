@@ -2,12 +2,16 @@
   display: flex;
   justify-content: space-evenly;
   height: 75%;
+  flex-wrap: wrap;
   align-items: center;
 }
 .title{
   height: 25%;
-  font-size: 3em;
+  font-size: 3vw;
   color: white;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-delay: 0s;
