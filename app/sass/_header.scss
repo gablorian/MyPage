@@ -8,6 +8,11 @@
   height: 25%;
   font-size: 3em;
   color: white;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInFromAbove, fadein;
 }
 .firstBox {
   background-image: url("../images/league.jpg");
@@ -16,6 +21,12 @@
   border-radius: 10px;
   transform: scale(1);
   transition-duration: 1200ms;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+
+  animation-name: slideInFromLeft, fadein;
   height: 80%;
 }
 .secondBox {
@@ -25,6 +36,12 @@
   border-radius: 10px;
   transform: scale(1);
   transition-duration: 1200ms;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+
+  animation-name: slideInFromDown, fadein;
   height: 80%;
 }
 .thirdBox {
@@ -34,13 +51,52 @@
   border-radius: 10px;
   transform: scale(1);
   transition-duration: 1200ms;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+
+  animation-name: slideInFromRight, fadein;
   height: 80%;
 }
 .firstBox:hover, .secondBox:hover, .thirdBox:hover{
   cursor: pointer;
   transform: scale(1.2);
-
   transition-duration: 2s;
-
-
+}
+@keyframes slideInFromDown{
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInFromAbove{
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInFromLeft{
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight{
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
